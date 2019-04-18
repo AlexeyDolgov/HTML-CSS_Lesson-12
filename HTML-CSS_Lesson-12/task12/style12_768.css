@@ -1,0 +1,205 @@
+* {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.header_block {
+    width: 768px;
+    display: block;
+}
+
+.header .menu ul {
+    position: absolute;
+    margin-top: 33px;
+    left: -7px;
+}
+
+.header .menu li:first-child {
+    padding-left: 0;
+}
+
+.header .menu li a:hover {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.slideshow {
+    width: 768px;
+}
+
+.slider .arrows {
+    width: calc((100% - 768px - 10px) / 2);
+}
+
+.slider .prev {
+    background-position: right;
+}
+
+.slider .next {
+    background-position: left;
+}
+
+.slideshow_slides h1 {
+    font-size: 48px;
+    line-height: 36px;
+    padding-top: 100px;
+}
+
+.slideshow_slides h2 {
+    font-size: 24px;
+    line-height: 36px;
+    white-space: nowrap;
+}
+
+.slideshow_slides p {
+    font-size: 16px;
+}
+
+.slide_text {
+    width: 274px;
+    height: 283px;
+    overflow: hidden;
+}
+
+.slideshow .controls {
+    left: 62%;
+    top: 110%;
+}
+
+.blurbs_block {
+    width: 768px;
+}
+
+.blurbs h1 {
+    font-size: 24px;
+    padding: 0;
+}
+
+.blurb1,
+.blurb2,
+.blurb3 {
+    width: 225px;
+}
+
+.blurb2 {
+    background: url(images/Layer-34.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.blurb3 {
+    background: url(images/Layer-34.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.rm_target768 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    -webkit-transition: 0.25s ease;
+    -o-transition: 0.25s ease;
+    transition: 0.25s ease;
+}
+
+.rm_state:checked ~ .rm_wrap .rm_target768 {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.rm_trigger {
+    padding: 0 10px;
+}
+
+.main:before {
+    background-size: 768px 15px;
+}
+
+.main_block {
+    width: 768px;
+}
+
+.testimonial {
+    width: 335px;
+}
+
+.test_slides {
+    height: 230px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.test_slides h1 {
+    font-size: 24px;
+}
+
+.test_slides h1 span:before {
+    content: "\a";
+    white-space: pre;
+}
+
+.testimonial .test_controls {
+    left: 41%;
+}
+
+.blog {
+    width: 335px;
+    overflow: hidden;
+}
+
+.blog p {
+    white-space: nowrap;
+}
+
+.logos_block {
+    width: 768px;
+}
+
+.news_block {
+    width: 768px;
+}
+
+.block1,
+.block2,
+.block3 {
+    width: 200px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.news h1 {
+    font-size: 24px;
+}
+
+.news .block1 h1 {
+    text-shadow: 0.5px 0.9px 0 white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.news .firstspan {
+    display: none;
+}
+
+.news h1 .secondspan {
+    display: inline;
+}
+
+.footer {
+    height: 200px;
+}
+
+.footer:before {
+    background-size: 768px 15px;
+}
+
+.footer_block {
+    width: 768px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}

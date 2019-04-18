@@ -1,0 +1,265 @@
+* {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.header {
+    height: 516px;
+}
+
+.header_block {
+    width: 480px;
+    display: block;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header .menu ul {
+    width: 246px;
+    height: 259px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 33px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.header .menu li {
+    float: none;
+    padding: 0 0 2px;
+}
+
+.header .menu li:first-child {
+    padding-top: 7px;
+}
+
+.header .menu a:first-child:after {
+    border-bottom: 2px solid #edbfff;
+    content: "";
+    width: 50px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 25px;
+}
+
+.header .menu li.hidden {
+    display: none;
+}
+
+.header .menu li a:hover {
+    border: none;
+}
+
+.slider {
+    height: 246px;
+    top: 203px;
+    background: none;
+}
+
+.slideshow {
+    width: 320px;
+}
+
+.slider .arrows {
+    width: calc((100% - 320px - 10px) / 2);
+}
+
+.slider .prev {
+    background-position: right;
+}
+
+.slider .next {
+    background-position: left;
+}
+
+.slideshow_slides h1 {
+    font-size: 36px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.slideshow_slides h2 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.slideshow_slides p {
+    display: none;
+}
+
+.slide_text {
+    width: 320px;
+    overflow: hidden;
+}
+
+.slide_image {
+    display: none;
+}
+
+.slideshow .controls {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 95%;
+}
+
+.blurbs_block {
+    width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.blurbs h1 {
+    font-size: 24px;
+    padding: 0;
+}
+
+.blurb1,
+.blurb2,
+.blurb3 {
+    width: 320px;
+}
+
+.blurb2 {
+    background: url(images/Layer-34.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.blurb3 {
+    background: url(images/Layer-34.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.rm_target320 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    -webkit-transition: 0.25s ease;
+    -o-transition: 0.25s ease;
+    transition: 0.25s ease;
+}
+
+.rm_state:checked ~ .rm_wrap .rm_target320 {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.rm_trigger {
+    padding: 0 10px 25px;
+}
+
+.main:before {
+    background-size: 320px 15px;
+}
+
+.main {
+    height: auto;
+}
+
+.main_block {
+    width: 320px;
+    padding: 100px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.testimonial {
+    width: 320px;
+}
+
+.test_slides {
+    height: 260px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.test_slides h1 {
+    font-size: 24px;
+}
+
+.test_slides h1 span:before {
+    content: "\a";
+    white-space: pre;
+}
+
+.testimonial .test_controls {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.blog {
+    width: 280px;
+    padding-top: 56px;
+    padding-left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.blog span {
+    display: none;
+}
+
+.blog p {
+    white-space: nowrap;
+}
+
+.logos {
+    height: 422px;
+}
+
+.logos_block {
+    width: 320px;
+    background: url(images/logos320.png) no-repeat center;
+}
+
+.news {
+    display: none;
+}
+
+.footer {
+    height: 200px;
+}
+
+.footer:before {
+    background-size: 320px 15px;
+}
+
+.footer_block {
+    width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.footer .menu ul {
+    display: none;
+}
+
+.footer p {
+    text-align: center;
+}
